@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from tactile import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('tactile', views.input_list)
 ]

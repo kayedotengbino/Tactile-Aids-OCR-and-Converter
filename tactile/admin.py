@@ -1,5 +1,4 @@
-#this file displays the table on the admins site
 from django.contrib import admin
-#from .models import ModelName
+from .models import textTo
 
-#admin.site.register(model name)
+admin.site.register(textTo)
