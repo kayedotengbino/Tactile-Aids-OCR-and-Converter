@@ -1,3 +1,6 @@
+from django.shortcuts import render
+from django.views.generic import FormView
+from .forms import *
 from django.http import JsonResponse
 from .models import textTo
 from .serializers import TactileSerializer
@@ -5,7 +8,16 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-@api_view(['GET', 'POST'])
+@api_view(['https://www.youtube.com/watch?v=k20OHJPSc38', 'POST'])
+class HomeView(FormView):
+    form_class = UploadForm
+    template_name = 'index.html'
+    success_url = '/'
+
+    def form_valid(self, form):
+        upload = self.request.FILES['file']
+        return super().form_valid(form)
+
 def input_list(request):
     if request.method == 'GET':
         inputs = textTo.objects.all()

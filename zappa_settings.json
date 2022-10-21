@@ -1,0 +1,9 @@
+{
+    "dev": {
+        "django_settings": "tactile.settings",
+        "profile_name": null,
+        "project_name": "tactile-aids-oc",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-pmrxfgcge"
+    }
+}
