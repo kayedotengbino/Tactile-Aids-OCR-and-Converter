@@ -1,9 +1,10 @@
 {
     "dev": {
+        "aws_region": "us-east-1",
         "django_settings": "tactile.settings",
-        "profile_name": null,
-        "project_name": "tactile-aids-oc",
+        "profile_name": "default",
+        "project_name": "text-to-braille",
         "runtime": "python3.8",
-        "s3_bucket": "zappa-pmrxfgcge"
+        "s3_bucket": "zappa-8xxyum7ou"
     }
 }
